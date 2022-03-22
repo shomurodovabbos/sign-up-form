@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__text-content">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="container__form">
+        <div class="container__form--description">
+          <p>
+            <span class="bold-text"> Try it free 7 days </span>
+            then <br />$20/mo. thereafter
+          </p>
+        </div>
+        <form class="container__form--form" id="form">
+          <div class="form-control">
+            <input type="text" placeholder="first name" id="name" />
+            <img src="./images/icon-error.svg" alt="" />
+            <small class="error-name"></small>
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="last name" id="last-name" />
+            <img src="./images/icon-error.svg" alt="" />
+            <small class="error-last-name"></small>
+          </div>
+          <div class="form-control">
+            <input type="email" placeholder="email address" id="email" />
+            <!-- <img src="./images/icon-error.svg" alt="" /> -->
+            <small class="error-email"></small>
+          </div>
+          <div class="form-control">
+            <input type="password" placeholder="password" id="password" />
+            <img src="./images/icon-error.svg" alt="" />
+            <small class="error-password">Password cannot be empty</small>
+          </div>
+
+          <button class="submit-btn" id="submit-btn">
+            claim your free trial
+          </button>
+          <p>
+            By clicking the button, you are agreeing to <br />
+            our
+            <a href="#"><span class="red-text">Terms and Services</span></a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
